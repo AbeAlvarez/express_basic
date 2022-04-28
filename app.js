@@ -19,7 +19,12 @@ app.get('/explorersInNode', (req, res) => {
     res.send(explorer)
 })
 
-//Query pads
+//Query params
 app.get('/explorers/:explorerName', (req, res) => {
     res.send(req.params)
 })
+
+// Inicialización de la app
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+   })
